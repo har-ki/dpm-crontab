@@ -21,5 +21,7 @@ Crontab entries
 Edit your crontab file (crontab -e) to include the startJob and stopJob.sh scripts.
 
 This sample crontab entry calls script startJob.sh every first minute of every hour and calls script stopJob.sh every third minute of every hour:
+
 1 * * * * <Absolute path to dpm-crontab directory>/startJob.sh >> <Absolute path to dpm-crontab directory>/log/script_output.log 2>&1
+
 3 * * * * <Absolute path to dpm-crontab directory>/stopJob.sh >> <Absolute path to dpm-crontab directory>/log/script_output.log 2>&1
